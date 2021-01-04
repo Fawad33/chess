@@ -8,13 +8,20 @@ public:
 		bool isBlackKingChecked = false, isWhiteKingChecked = false;
 		int fromX, fromY, toX, toY;
 		while (isBlackKingChecked == false && isWhiteKingChecked == false) {
-			cout << "Whites Turn. \n Enter the co-ordinates from which you want to move: ";
+			cout << "White's Turn. \n Enter the co-ordinates from which you want to move: ";
 			cin >> fromX;
 			cin >> fromY;
 			cout << "Enter the co-ordinates to which you want to move: ";
 			cin >> toX;
 			cin >> toY;
-
+			//function to move to be added here. should return king check to be true or false
+			cout << "Black's Turn. \n Enter the co-ordinates from which you want to move: ";
+			cin >> fromX;
+			cin >> fromY;
+			cout << "Enter the co-ordinates to which you want to move: ";
+			cin >> toX;
+			cin >> toY;
+			//function to move to be added here
 		}
 	}
 	
