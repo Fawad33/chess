@@ -1,52 +1,17 @@
-#include"Bishop.cpp""
-#include"ChessPiece.cpp"
-#include"King.cpp"
-#include"Knight.cpp"
-#include"Pawn.cpp"
-#include"Queen.cpp"
-#include"Rook.cpp"
+#include"chessBoard.h"
 
-class ChessBoard {
-public:	
-	Bishop blackBishopLeft;
-	Bishop blackBishopRight;
-	Bishop whiteBishopLeft;
-	Bishop whiteBishopRight;
-	King blackKing;
-	King whiteKing;
-	Knight blackKnightLeft; 
-	Knight blackKnightRight;
-	Knight whiteKnightLeft;
-	Knight whiteKnightRight;
-	Queen blackQueen;
-	Queen whiteQueen;
-	Rook blackRookLeft;
-	Rook blackRookRight;
-	Rook whiteRookLeft;
-	Rook whiteRookRight;
-	Pawn blackPawn1;
-	Pawn blackPawn2;
-	Pawn blackPawn3;
-	Pawn blackPawn4;
-	Pawn blackPawn5;
-	Pawn blackPawn6;
-	Pawn blackPawn7;
-	Pawn blackPawn8;
-	Pawn whitePawn1;
-	Pawn whitePawn2;
-	Pawn whitePawn3;
-	Pawn whitePawn4;
-	Pawn whitePawn5;
-	Pawn whitePawn6;
-	Pawn whitePawn7;
-	Pawn whitePawn8;
-
-	ChessPiece* board[8][8] = {&blackRookLeft, &blackKnightLeft, &blackBishopLeft, &blackKing, & blackQueen, &blackBishopRight, &blackKnightRight, &blackRookRight,
-	&blackPawn1, &blackPawn2, &blackPawn3, &blackPawn4, &blackPawn5, &blackPawn6, &blackPawn7, &blackPawn8,
-	nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, 
-	nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, 
-	nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, 
-	nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr,
-	&whitePawn1, &whitePawn2, &whitePawn3, &whitePawn4, &whitePawn5, &whitePawn6, &whitePawn7, &whitePawn8,
-	&whiteRookLeft, &whiteKnightLeft, &whiteBishopLeft, &whiteQueen, &whiteKing,  &whiteBishopRight, &whiteKnightRight, &whiteRookRight };
-};
+ChessBoard::ChessBoard() {
+	board[0][0] = &rook[0], board[0][1] = &knight[0], board[0][2] = &bishop[0], board[0][3] = &queen[0], board[0][4] = &king[0], board[0][5] = &bishop[1], board[0][6] = &knight[1], board[0][7] = &rook[1];
+	for (int i = 0; i < 8; i++) {
+		board[1][i] = &pawn[i];
+	}
+	for (int i = 2; i < 6; i++) {
+		for (int j = 0; j < 8; j++) {
+			board[i][j] = nullptr;
+		}
+	}
+	for (int i = 0; i < 8; i++) {
+		board[6][i] = &pawn[i + 8];
+	}
+	board[7][0] = &rook[2], board[7][1] = &knight[2], board[7][2] = &bishop[0], board[7][3] = &queen[1], board[7][4] = &king[1], board[7][5] = &bishop[3], board[7][6] = &knight[3], board[7][7] = &rook[3];
+}
