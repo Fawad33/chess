@@ -7,16 +7,17 @@
 #include"queen.h"
 #include"rook.h"
 
-class ChessBoard {
+class chessBoard {
 public:
-	Bishop bishop[4];
-	King king[2];
-	Knight knight[4];
-	Queen queen[2];
-	Rook rook[4];
-	Pawn pawn[16];
+	bishop bishop[4];
+	king king[2];
+	knight knight[4];
+	queen queen[2];
+	rook rook[4];
+	pawn pawn[16];
 
-	ChessPieces* board[8][8];
+	chessPieces* board[8][8];
 
-	ChessBoard();
+	chessBoard();
+	void setBoardValue(int toX, int toY, int fromX, int fromY);
 };

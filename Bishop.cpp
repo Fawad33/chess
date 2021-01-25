@@ -1,3 +1,8 @@
-void moveBishop(int fromX, int fromY, int toX, int toY) {
+#include<string>
+#include"bishop.h"
+
+using namespace std;
+
+void move(int fromX, int fromY, int toX, int toY) {
 
 }

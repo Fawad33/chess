@@ -1,3 +1,3 @@
-void moveKnight(int fromX, int fromY, int toX, int toY) {
+void move(int fromX, int fromY, int toX, int toY) {
 
 }

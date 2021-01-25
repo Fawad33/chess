@@ -1,4 +1,5 @@
 #include<iostream>
+#include"chessBoard.h"
 
 using namespace std;
 
@@ -15,6 +16,8 @@ public:
 			cin >> toX;
 			cin >> toY;
 			//function to move to be added here. should return king check to be true or false
+			ChessBoard chessboard;
+			chessboard.setBoardValue(fromX, fromY, toX, toY);
 			cout << "Black's Turn. \n Enter the co-ordinates from which you want to move: ";
 			cin >> fromX;
 			cin >> fromY;
@@ -22,7 +25,8 @@ public:
 			cin >> toX;
 			cin >> toY;
 			//function to move to be added here
+			chessboard.setBoardValue(fromX, fromY, toX, toY);
 		}
 	}
-	
+
 };

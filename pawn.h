@@ -1,6 +1,6 @@
 #include"chessPieces.h"
 
-class Pawn : public ChessPieces {
+class pawn : public chessPieces {
 public:
 	string type;
 	void movePawn(int fromX, int fromY, int toX, int toY) {

@@ -3,10 +3,7 @@
 #include"chessPieces.h"
 #include<string>
 
-class Bishop : public ChessPieces {
-public:
-	string type;
-	void moveBishop(int fromX, int fromY, int toX, int toY) {
-
-	}
+class bishop : public chessPieces {
+public:	
+	void chessPieces::move(int fromX, int fromY, int toX, int toY);
 };
