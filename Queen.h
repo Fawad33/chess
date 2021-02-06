@@ -1,10 +1,10 @@
 #pragma once
-#include"chessPieces.h"
+#include "chessPiece.h"
 
-class queen : public chessPieces {
+class queen : public chessPiece {
 public:
-	string type;
-	void moveQueen(int fromX, int fromY, int toX, int toY) {
-
-	}
+	std::string objnamebishop, objtypebishop;
+	int objidbishop;
+	queen(string objnamebishop, string objtypebishop, int objid);
+	void move(int fromX, int fromY, int toX, int toY);
 };

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class chessPieces {
+class chessPiece {
 private:
 	string type;
 	string name;
@@ -12,6 +12,6 @@ public:
 	string getName();
 	string getType();
 	int getID();
-	chessPieces(string objname, string objtype, int objid);
-	void move(int fromX, int fromY, int toX, int toY);
+	chessPiece(string, string, int);
+	virtual void move(int fromX, int fromY, int toX, int toY) = 0;
 };

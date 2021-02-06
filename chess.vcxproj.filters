@@ -18,9 +18,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="chessPieces.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="bishop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -28,6 +25,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="gameplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="chessPiece.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="king.cpp">
@@ -68,10 +68,10 @@
     <ClInclude Include="chessBoard.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="chessPieces.h">
+    <ClInclude Include="queen.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="queen.h">
+    <ClInclude Include="chessPiece.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

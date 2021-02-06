@@ -1,9 +1,9 @@
-#include"chessPieces.h"
+#include "chessPiece.h"
 
-class rook : public chessPieces {
+class rook : public chessPiece {
 public:
-	string type;
-	void moveRook(int fromX, int fromY, int toX, int toY) {
-
-	}
+	std::string objnamebishop, objtypebishop;
+	int objidbishop;
+	rook(string objnamebishop, string objtypebishop, int objid);
+	void move(int fromX, int fromY, int toX, int toY);
 };

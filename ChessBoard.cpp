@@ -1,7 +1,8 @@
-#include"chessBoard.h"
+#include "chessBoard.h"
 
 chessBoard::chessBoard() {
-	board[0][0] = &rook[0], board[0][1] = &knight[0], board[0][2] = &bishop[0], board[0][3] = &queen[0], board[0][4] = &king[0], board[0][5] = &bishop[1], board[0][6] = &knight[1], board[0][7] = &rook[1];
+	bishop[0] = &bishop::bishop("white", "bishop", 0);
+	/*board[0][0] = &rook[0], board[0][1] = &knight[0], board[0][2] = &bishop[0], board[0][3] = &queen[0], board[0][4] = &king[0], board[0][5] = &bishop[1], board[0][6] = &knight[1], board[0][7] = &rook[1];
 	for (int i = 0; i < 8; i++) {
 		board[1][i] = &pawn[i];
 	}
@@ -14,10 +15,10 @@ chessBoard::chessBoard() {
 		board[6][i] = &pawn[i + 8];
 	}
 	board[7][0] = &rook[2], board[7][1] = &knight[2], board[7][2] = &bishop[0], board[7][3] = &queen[1], board[7][4] = &king[1], board[7][5] = &bishop[3], board[7][6] = &knight[3], board[7][7] = &rook[3];
-
+	bishop[0] = new bishop("white", "bishop", 0);
 	rook[0].type = "white";
 	knight[0].type = "white";
-	bishop[0].type = "white";
+	bishop[0]("bishop", "black", 1);
 	queen[0].type = "white";
 	king[0].type = "white";
 	bishop[1].type = "white";
@@ -36,7 +37,7 @@ chessBoard::chessBoard() {
 	rook[3].type = "black";
 	for (int i = 0; i < 8; i++) {
 		pawn[i + 8].type = "black";
-	}
+	}*/
 }
 
 void chessBoard::setBoardValue(int toX, int toY, int fromX, int fromY) {
