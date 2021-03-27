@@ -9,7 +9,11 @@ void gameplay::display() {
 	for (int i = 0; i < 8; i++) {
 		cout << endl;
 		for (int j = 0; j < 8; j++) {
-			cout << chessBoardObj.board[i][j]->getType() << chessBoardObj.board[i][j]->getName() << chessBoardObj.board[i][j]->getID() << " ";
+			if (chessBoardObj.board[i][j] != nullptr) {
+				cout << chessBoardObj.board[i][j]->getType() << chessBoardObj.board[i][j]->getName() << chessBoardObj.board[i][j]->getID() << " ";
+			}
+			else
+				cout << "NULL ";
 		}
 	}
 }
