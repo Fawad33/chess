@@ -2,8 +2,8 @@
 
 class pawn : public chessPiece {
 public:
-	std::string objnamebishop, objtypebishop;
-	int objidbishop;
-	pawn(string objnamebishop, string objtypebishop, int objid);
+	std::string objnamepawn, objtypepawn;
+	int objidpawn;
+	pawn(string objnamepawn, string objtypepawn, int objidpawn);
 	void move(int fromX, int fromY, int toX, int toY);
 };

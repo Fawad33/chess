@@ -74,5 +74,8 @@
     <ClInclude Include="chessPiece.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="gameplay.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

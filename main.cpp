@@ -1,3 +1,6 @@
-void main() {
+#include"gameplay.h"
 
+void main() {
+	gameplay gameplayobj;
+	gameplayobj.display();
 }

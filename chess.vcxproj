@@ -138,6 +138,7 @@
     <ClInclude Include="bishop.h" />
     <ClInclude Include="chessBoard.h" />
     <ClInclude Include="chessPiece.h" />
+    <ClInclude Include="gameplay.h" />
     <ClInclude Include="isKingChecked.h" />
     <ClInclude Include="king.h" />
     <ClInclude Include="knight.h" />
