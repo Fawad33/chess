@@ -7,6 +7,6 @@ queen::queen(string name, string type, int id) : chessPiece(name, type, id) {
 
 }
 
-void queen::move(int fromX, int fromY, int toX, int toY) {
-
+bool queen::move(int fromX, int fromY, int toX, int toY) {
+	return true;
 }

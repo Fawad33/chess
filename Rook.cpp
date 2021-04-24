@@ -7,6 +7,6 @@ rook::rook(string name, string type, int id) : chessPiece(name, type, id) {
 
 }
 
-void rook::move(int fromX, int fromY, int toX, int toY) {
-
+bool rook::move(int fromX, int fromY, int toX, int toY) {
+	return true;
 }

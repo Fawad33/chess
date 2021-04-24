@@ -21,3 +21,5 @@ public:
 	chessBoard();
 	void setBoardValue(int toX, int toY, int fromX, int fromY);
 };
+
+extern chessBoard chessBoardObj;

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-chessBoard chessBoardObj;
+extern chessBoard chessBoardObj;
 void gameplay::display() {
 	for (int i = 0; i < 8; i++) {
 		cout << endl;
@@ -17,6 +17,7 @@ void gameplay::display() {
 		}
 	}
 }
+
 void gameplay::playGame() {
 	bool isBlackKingChecked = false, isWhiteKingChecked = false;
 	int fromX, fromY, toX, toY;
@@ -28,7 +29,10 @@ void gameplay::playGame() {
 		cin >> toX;
 		cin >> toY;
 		//function to move to be added here. should return king check to be true or false
-		chessBoardObj.setBoardValue(fromX, fromY, toX, toY);
+		if (chessBoardObj.board[fromX][fromY]->move(fromX, fromY, toX, toY) == true)
+			chessBoardObj.setBoardValue(fromX, fromY, toX, toY);
+		else
+			cout << "Invaild move, enter a valid move." << endl;
 		cout << "Black's Turn. \n Enter the co-ordinates from which you want to move: ";
 		cin >> fromX;
 		cin >> fromY;

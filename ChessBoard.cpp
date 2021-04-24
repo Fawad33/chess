@@ -85,4 +85,7 @@ chessBoard::chessBoard() {
 void chessBoard::setBoardValue(int toX, int toY, int fromX, int fromY) {
 	board[toX][toY] = board[fromX][fromY];
 	board[fromX][fromY] = nullptr;
+	
 }
+
+chessBoard chessBoardObj;
